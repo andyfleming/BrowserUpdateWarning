@@ -29,7 +29,7 @@ Javascript:
 
 	window.addEvent('domready', function() {
 		
-		browserWarning = new BrowserUpdateWarning();
+		var browserWarning = new BrowserUpdateWarning();
 		
 		browserWarning.check();
 	}
@@ -41,7 +41,7 @@ Example with options
 Javascript:
 
 	window.addEvent('domready', function() {
-		browserWarning = new BrowserUpdateWarning({
+		var browserWarning = new BrowserUpdateWarning({
 			imagesDirectory: 'ui/js/mootools.BrowserUpdateWarning/Source/images/',
 			opacity: 30
 		});
