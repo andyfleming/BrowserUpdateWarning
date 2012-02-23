@@ -41,9 +41,21 @@ Example with options
 Javascript:
 
 	window.addEvent('domready', function() {
+	
 		var browserWarning = new BrowserUpdateWarning({
+		
+			// Custom Images Directory
 			imagesDirectory: 'ui/js/mootools.BrowserUpdateWarning/Source/images/',
-			opacity: 30
+			
+			// Example minimum version override
+			minVersion_safari: 6,
+			
+			// Opacity for shade div over content
+			opacity: 30,
+			
+			// Show Continue to site button
+			allowContinue: true
+			
 		});
 		
 		browserWarning.check();

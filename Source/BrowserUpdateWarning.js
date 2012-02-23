@@ -34,7 +34,7 @@ provides: [BrowserUpdateWarning]
 		options: {
 			
 			showPopup: true,
-			allowCloseAndContiue: false,
+			allowContinue: false,
 			imagesDirectory: 'images/',
 			
 			shade: true,
@@ -146,7 +146,9 @@ provides: [BrowserUpdateWarning]
 						html += '<li>Other great features</li>';
 					html += '</ul>';
 				html += '</div>';
-				html += '<a href="javascript:void(0);" class="continueToSite" onclick="$(\'BrowserUpdateWarningShade\').hide();$(\'BrowserUpdateWarningWrapper\').hide();">Continue to Site &raquo;</a>';
+				if (self.options.allowCloseAndContiue) {
+					html += '<a href="javascript:void(0);" class="continueToSite" onclick="$(\'BrowserUpdateWarningShade\').hide();$(\'BrowserUpdateWarningWrapper\').hide();">Continue to Site &raquo;</a>';
+				}
 				html += '<div style="clear:both"></div>';
 			
 			
