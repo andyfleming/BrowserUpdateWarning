@@ -1,16 +1,18 @@
 /*
 ---
 
+name: BrowserUpdateWarning
+
 description: Browser Version Check and Warn
 
-license:
-  - MIT-style license
+version: 1.0.0
+
+license: MIT-style license
 
 authors:
   - Andy Fleming
   
-requires:
-	core/1.4.4:   '*'
+requires: [Core/Class, Core/Object, Core/Element.Event]
 
 provides: [BrowserUpdateWarning]
 
