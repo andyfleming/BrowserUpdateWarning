@@ -1,7 +1,9 @@
 BrowserUpdateWarning
 ===========
 
-Requirements
+A browser update warning plugin for Moo Tools. 
+
+Dependencies
 ------------
 
 - MooTools Core v1.4.4 
@@ -20,6 +22,7 @@ How to use
 	<link href="path-to-browser-update-warning-css" type="text/css" rel="stylesheet" />
 
 **Example 1**
+
 Shows basic usage.
 
 Javascript:
@@ -32,6 +35,7 @@ Javascript:
 	}
 	
 **Example 2**
+
 Example with options
 
 Javascript:
