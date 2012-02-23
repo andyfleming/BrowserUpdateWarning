@@ -49,4 +49,10 @@ Javascript:
 		browserWarning.check();
 	}
 
+
+Screenshot
+-----------------
+
+![Screenshot](http://andyfleming.com/code/browser-update-warning-for-mootools/images/screenshot-1.png)
+
 Please report bugs, errors and advices in the github project page: https://github.com/andyfleming/BrowserUpdateWarning
