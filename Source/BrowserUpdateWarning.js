@@ -5,7 +5,7 @@ name: BrowserUpdateWarning
 
 description: Browser Version Check and Warn
 
-version: 1.0.1
+version: 1.0.2
 
 license: MIT-style license
 
@@ -80,7 +80,7 @@ provides: [BrowserUpdateWarning]
 		
 		check: function() {
 			
-			self = this;
+			var self = this;
 			
 			var browsers = ['ie','safari','firefox','chrome','opera'];
 			
@@ -107,7 +107,7 @@ provides: [BrowserUpdateWarning]
 	
 		showBrowserUpdateWarning: function() {
 
-			self = this;
+			var self = this;
 
 			// If the shade is turned on, show it
 			if (self.options.shade) { self.showShade(); }
