@@ -5,7 +5,7 @@ name: BrowserUpdateWarning
 
 description: Browser Version Check and Warn
 
-version: 1.0.2
+version: 1.0.3
 
 license: MIT-style license
 
@@ -34,7 +34,10 @@ provides: [BrowserUpdateWarning]
 		options: {
 			
 			showPopup: true,
+			
+			// Allow user to close prompt and continue to website
 			allowContinue: false,
+			
 			imagesDirectory: 'images/',
 			
 			shade: true,
@@ -146,7 +149,7 @@ provides: [BrowserUpdateWarning]
 						html += '<li>Other great features</li>';
 					html += '</ul>';
 				html += '</div>';
-				if (self.options.allowCloseAndContiue) {
+				if (self.options.allowContinue) {
 					html += '<a href="javascript:void(0);" class="continueToSite" onclick="$(\'BrowserUpdateWarningShade\').hide();$(\'BrowserUpdateWarningWrapper\').hide();">Continue to Site &raquo;</a>';
 				}
 				html += '<div style="clear:both"></div>';
