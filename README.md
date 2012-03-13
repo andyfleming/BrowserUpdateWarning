@@ -6,7 +6,7 @@ A browser update warning plugin for Moo Tools.
 Dependencies
 ------------
 
-- MooTools Core v1.4.4 
+- MooTools Core v1.4.4
 
 
 How to use

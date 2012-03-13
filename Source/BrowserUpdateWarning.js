@@ -5,7 +5,7 @@ name: BrowserUpdateWarning
 
 description: Browser Version Check and Warn
 
-version: 1.0.3
+version: 1.0.5
 
 license: MIT-style license
 
