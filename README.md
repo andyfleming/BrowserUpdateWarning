@@ -68,3 +68,21 @@ Screenshot
 ![Screenshot](http://andyfleming.com/code/browser-update-warning-for-mootools/images/screenshot-1.png)
 
 Please report bugs, errors and advices in the github project page: https://github.com/andyfleming/BrowserUpdateWarning
+
+
+Terms & Conditions
+-----
+ 
+BrowserUpdateWarning
+Copyright 2012 Andy Fleming
+
+This copyright notice and permission notice shall be included in
+all copies of the Software, in part or as a whole.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
