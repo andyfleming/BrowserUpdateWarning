@@ -5,7 +5,7 @@ name: BrowserUpdateWarning
 
 description: Browser Version Check and Warn
 
-version: 1.0.5
+version: 1.0.6
 
 license: MIT-style license
 
@@ -150,7 +150,10 @@ provides: [BrowserUpdateWarning]
 					html += '</ul>';
 				html += '</div>';
 				if (self.options.allowContinue) {
-					html += '<a href="javascript:void(0);" class="continueToSite" onclick="$(\'BrowserUpdateWarningShade\').hide();$(\'BrowserUpdateWarningWrapper\').hide();">Continue to Site &raquo;</a>';
+					html += '<a href="javascript:void(0);" class="continueToSite" onclick="';
+					html += '$(\'BrowserUpdateWarningWrapper\').setStyle(\'display\',\'none\');';
+					if (self.options.shade) html += '$(\'BrowserUpdateWarningShade\').setStyle(\'display\',\'none\');';
+					html += '">Continue to Site &raquo;</a>';
 				}
 				html += '<div style="clear:both"></div>';
 			
