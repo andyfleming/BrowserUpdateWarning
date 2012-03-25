@@ -32,6 +32,7 @@ Javascript:
 		var browserWarning = new BrowserUpdateWarning();
 		
 		browserWarning.check();
+		
 	});
 	
 **Example 2**
