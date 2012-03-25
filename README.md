@@ -32,7 +32,7 @@ Javascript:
 		var browserWarning = new BrowserUpdateWarning();
 		
 		browserWarning.check();
-	}
+	});
 	
 **Example 2**
 
@@ -59,7 +59,7 @@ Javascript:
 		});
 		
 		browserWarning.check();
-	}
+	});
 
 
 Screenshot
