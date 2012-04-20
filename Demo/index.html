@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Motools Browser Update Warning Example</title>
+
+		<link rel="stylesheet" type="text/css" href="../Source/css/BrowserUpdateWarning.css"/>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+		<script src="../Source/BrowserUpdateWarning.js"></script>
+		<script type="text/javascript">
+		
+			window.addEvent('domready', function() {
+				
+				var browserWarning = new BrowserUpdateWarning({
+				
+					// Custom Images Directory
+					imagesDirectory: '../Source/images/',
+					
+					// Example minimum version override
+					minVersion_ie:			60,
+					minVersion_safari:		60,
+					minVersion_firefox:		60,
+					minVersion_chrome:		60,
+					minVersion_opera:		60,
+					
+					
+					// Opacity for shade div over content
+					opacity: 30,
+					
+					// Show Continue to site button
+					allowContinue: true
+					
+					
+				});
+				
+				browserWarning.check();
+				
+			});			
+		</script>
+		
+	</head>
+	<body>
+		<div id="content">
+			<div id="header">
+				<h1>Example!</h1>
+			</div>
+			<div id="main">
+			</div>
+		</div>
+	</body>
+</html>
