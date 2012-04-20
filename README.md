@@ -14,10 +14,14 @@ How to use
 
 **Include mootools framework and BrowserUpdateWarning plugin**
 
+	#html
+
 	<script src="path-to-mootools-framework" type="text/javascript"></script>
 	<script src="path-to-browser-update-warning-js" type="text/javascript"></script>
 
 **Include BrowserUpdateWarning stylesheet**
+
+	#html
 
 	<link href="path-to-browser-update-warning-css" type="text/css" rel="stylesheet" />
 
@@ -27,6 +31,8 @@ Shows basic usage.
 
 Javascript:
 
+	#js
+	
 	window.addEvent('domready', function() {
 		
 		var browserWarning = new BrowserUpdateWarning();
@@ -37,10 +43,12 @@ Javascript:
 	
 **Example 2**
 
-Example with options
+Example with options.
 
 Javascript:
 
+	#js
+	
 	window.addEvent('domready', function() {
 	
 		var browserWarning = new BrowserUpdateWarning({

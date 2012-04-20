@@ -46,6 +46,7 @@
 	#BrowserUpdateWarningContent h1 {
 		margin-bottom:16px;
 		color:#fff;
+		font-weight:bold;
 		font-size:32px;
 	}
 	
@@ -90,12 +91,14 @@
 		list-style: disc;
 		-webkit-margin-before: 0;
 		-webkit-margin-after: 0;
+		padding:0px 20px;
 		
 	}
 	
 	#BrowserUpdateWarningContent .whyUpgrade ul li {
 		font-size:14px;
 		color:#aaa;
+		margin-top:5px;
 	}
 	
 	#BrowserUpdateWarningContent .otherBrowsers {
