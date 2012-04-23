@@ -9,7 +9,7 @@ Dependencies
 - MooTools Core v1.4.4
 
 
-Default Version Check (minimum allowed versions)
+Default Minimum Version Check
 ------------
 - ie: 7
 - safari: 5
