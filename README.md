@@ -9,6 +9,16 @@ Dependencies
 - MooTools Core v1.4.4
 
 
+Default Version Check (minimum allowed versions)
+------------
+- ie: 7
+- safari: 5
+- firefox: 5
+- chrome: 15
+- opera: 10
+
+
+
 How to use
 ----------
 
