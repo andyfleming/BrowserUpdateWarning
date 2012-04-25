@@ -5,7 +5,7 @@ name: BrowserUpdateWarning
 
 description: Browser Version Check and Warn
 
-version: 1.1.1
+version: 1.1.2
 
 license: MIT-style license
 
@@ -76,6 +76,14 @@ provides: [BrowserUpdateWarning]
 			this.setOptions(options);
 		},
 	
+	// ------------------------------------------------------------------------------------
+	//	isGoogleInstantPreview()
+	//		Helper method (to detect Google Instant Preview in Web Search)
+	// ------------------------------------------------------------------------------------
+	
+		isGoogleInstantPreview: function () {
+			return (navigator.userAgent.match(/Google Web Preview/i) != null);
+		},
 	
 	// ------------------------------------------------------------------------------------
 	//	Check (and warn if necessary)
@@ -85,21 +93,16 @@ provides: [BrowserUpdateWarning]
 			
 			var self = this;
 			
-			var browsers = ['ie','safari','firefox','chrome','opera'];
+			// If the minimum browser 
+			if (Browser.version < self.options['minVersion_'+Browser.name] && !self.isGoogleInstantPreview()) {
+				if (self.options.showPopup) { self.showBrowserUpdateWarning(); }
+				self.fireEvent('onFailure');
+			} else {
+				self.fireEvent('onSuccess');
+			}
 			
-			browsers.each(function(key,index) {
-						
-				if (Browser.name == key && Browser.version < self.options['minVersion_'+key]) {
-					if (self.options.showPopup) { self.showBrowserUpdateWarning(); }
-					self.fireEvent('onFailure');
-					return;
-				}
-			});
-			
-			// If all requirements were met, fire success event
-			self.fireEvent('onSuccess');
-			
-	
+			return;
+							
 		},
 		
 	
